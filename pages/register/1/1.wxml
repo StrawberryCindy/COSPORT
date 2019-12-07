@@ -1,2 +1,28 @@
 <!--pages/1.wxml-->
-<text>pages/1.wxml</text>
+<view>
+  <view class='title'>申请身份</view>
+  <!--身份单选框-->
+  <view class="radio-identity">
+    <label class="label-identity {{item.selected ? 'on' : '' }}" wx:for="{{identities}}" wx:key="index" bindtap="getIdentity" data-index='{{index}}'>{{item.value}}</label>
+  </view>
+  <input class='input' placeholder='真实姓名' bindblur='getName'></input>
+  <input class='input'placeholder='学号' bindblur='getId'></input>
+  <!-- 下拉框 -->
+  <view class='select_box'>
+    <view class='select' bindtap='selectTap'>
+      <text class='select_text'>{{majorTitle}}</text>
+      <image class="select_img" src='{{arrow}}'></image>
+    </view>
+    <view class='option_box' style='height:{{show?(selectData.length>5?300:selectData.length*60):0}}rpx;'>
+      <text class='option' style='{{major==selectData.length-1&&"border:0;"}}' wx:for='{{selectData}}' wx:key='index' data-index='{{index}}' bindtap='optionTap'>{{item}}</text>
+    </view>
+  </view>
+  <!-- 校区单选框 -->
+  <view class='radio-school' bindchange='getSchool'>
+    <label class="label-school {{item.selected ? 'on' : '' }}" wx:for="{{schools}}" wx:key="index" bindtap="getSchool" data-index='{{index}}'>
+      <view value='{{item.name}}' checked='{{item.checked}}'>{{item.value}}</view>
+    </label>
+  </view>
+  <!-- next -->
+  <button type="default" size="{{defaultSize}}" loading="{{loading}}" plain="{{plain}}" disabled="{{!finish}}" bindtap="toNext" hover-class="other-button-hover">下一步</button>
+</view>
