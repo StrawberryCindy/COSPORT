@@ -1,0 +1,19 @@
+<view class="contain">
+  <view class="callback-box">
+    <image class="callback-image" src="../../../images/callback.svg"/>
+  </view>
+  <view class="message-menu">
+    <view class="message-menu-left">
+      <view class="message-menu-sport">{{ falseData.sport }}</view>
+      <view class="message-menu-school">{{ falseData.school }}</view>
+      <view class="message-menu-schoolArea">{{ falseData.schoolArea }}</view>
+    </view>
+  </view>
+  <view>
+    
+  </view>
+
+  <scroll-view>
+
+  </scroll-view>
+</view>

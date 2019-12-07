@@ -1,0 +1,30 @@
+.contain {
+  width:750rpx;
+  height:100vh;
+  margin:0;
+  padding:0;
+}
+.callback-box {
+  width:750rpx;
+  height:50rpx;
+}
+.callback-image {
+  width:70rpx;
+  height:50rpx;
+  margin-left:20rpx;
+}
+.message-menu {
+  width:750rpx;
+  height:200rpx;
+}
+.message-menu-left {
+  width:300rpx;
+  height:200rpx;
+}
+.message-menu view {
+  width:150rpx;
+  height:100rpx;
+}
+.message-menu-sport {
+  width:300rpx;
+}
