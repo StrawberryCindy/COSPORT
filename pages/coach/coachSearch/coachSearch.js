@@ -9,7 +9,12 @@ Page({
       sport: "篮球",
       school: "华工",
       schoolArea: "五山校区"
-    }
+    },
+    downMenuData :[
+      "高水平运动员",
+      "有基础陪练"
+    ],
+    downMenuVal: ''
   },
 
   /**
@@ -66,5 +71,11 @@ Page({
    */
   onShareAppMessage: function () {
 
+  },
+  downMenuVal (e) {
+    this.setData({
+      downMenuVal: e.detail.downMenuVal
+    })
+    console.log(this.data.downMenuVal);
   }
 })

@@ -16,15 +16,44 @@
 .message-menu {
   width:750rpx;
   height:200rpx;
+  display: -webkit-flex;
+  display:flex;
+  justify-content:space-around;
+  -webkit-justify-content:space-around;
 }
 .message-menu-left {
-  width:300rpx;
-  height:200rpx;
+  width:250rpx;
+  height:150rpx;
+  margin-top:50rpx;
 }
-.message-menu view {
-  width:150rpx;
-  height:100rpx;
+.message-menu-left view {
+  height:75rpx;
+  line-height:75rpx;
 }
 .message-menu-sport {
-  width:300rpx;
+  width:250rpx;
+  text-align: left;
+  padding-left:30rpx;
+  font-size:45rpx;
+  font-weight:bold;
+}
+.message-menu-school {
+  width: 100rpx;
+  float:left;
+  font-size:30rpx;
+  text-align: center;
+}
+.message-menu-school-area {
+  width:150rpx;
+  float:left;
+  font-size:30rpx;
+}
+.down-menu-box {
+  width:200rpx;
+  height:60rpx !important;
+  line-height:60rpx !important;
+  padding:0 100rpx;
+}
+.down-menu {
+  height:inherit;
 }

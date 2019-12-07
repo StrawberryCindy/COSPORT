@@ -1,0 +1,9 @@
+<view class="down-menu">
+  <view class="down-menu-select" bindtap="hindDownMenuItem">
+    <view>{{ dataActive }}</view>
+    <image class="down-image" src="../.../../../images/down.svg"/>
+  </view>
+  <view class="down-menu-item-box" wx:if="{{isDownMenuItem}}">
+    <view class="down-menu-item" wx:for="{{downMenuData}}" wx:key="index" bindtap="selectDownMenuItem" data-index="{{index}}"> {{ item }} </view>
+  </view>
+</view>

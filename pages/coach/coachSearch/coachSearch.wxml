@@ -6,11 +6,13 @@
     <view class="message-menu-left">
       <view class="message-menu-sport">{{ falseData.sport }}</view>
       <view class="message-menu-school">{{ falseData.school }}</view>
-      <view class="message-menu-schoolArea">{{ falseData.schoolArea }}</view>
+      <view class="message-menu-school-area">{{ falseData.schoolArea }}</view>
     </view>
-  </view>
-  <view>
-    
+    <view class="down-menu-box">
+      <view class="down-menu">
+        <down-menu downMenuData="{{downMenuData}}" bind:downMenuVal="downMenuVal"></down-menu>        
+      </view>
+    </view>
   </view>
 
   <scroll-view>

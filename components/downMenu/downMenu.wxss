@@ -1,0 +1,42 @@
+/* components/downMenu/downMenu.wxss */
+.down-menu {
+  width:inherit;
+  position:absolute;
+  font-size:30rpx;
+}
+.down-menu-select {
+  border-radius: 10rpx;
+  text-align:center;
+  background-color:#337f9f;
+  color:white;
+  display:flex;
+  justify-content:space-around;
+  align-items:center;
+}
+.down-menu-select>view {
+  width:250rpx;
+  text-align:center;
+}
+.down-image {
+  width:30rpx;
+  height:30rpx;
+  padding-right:15rpx;
+  padding-left:5rpx;
+}
+.down-menu-item-box {
+  width:inherit;
+  position:absolute;
+  top:60rpx;
+  z-index:1;
+  background-color:#6891b3;
+  border-radius: 0 0 10rpx 10rpx;
+  overflow:hidden;
+  padding: 10rpx 0;
+}
+.down-menu-item {
+  width:250rpx;
+  height:60rpx;
+  text-align:center;
+  padding-right:50rpx;
+  color:white;
+}
