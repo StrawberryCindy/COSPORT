@@ -1,0 +1,14 @@
+<view>
+  <view class="head-rotait-box">
+    <image  class="head-protait" src="{{ falseData.imgUrl }}"/>
+  </view>
+
+  <view class="messagePart">
+    <view class="name">{{ falseData.name }}</view>
+    <view class="team">{{ falseData.team }}</view>
+  </view>
+
+  <view class="button">
+    <button type="primary">查看</button>
+  </view>
+</view>

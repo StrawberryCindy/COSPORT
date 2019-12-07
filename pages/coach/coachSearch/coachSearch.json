@@ -1,5 +1,6 @@
 {
   "usingComponents": {
-    "down-menu": "../../../components/downMenu/downMenu"
+    "down-menu": "../../../components/downMenu/downMenu",
+    "coach-card-item": "coachCardItem/coachCardItem"
   }
 }

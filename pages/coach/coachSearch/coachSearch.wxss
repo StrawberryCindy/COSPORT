@@ -57,3 +57,10 @@
 .down-menu {
   height:inherit;
 }
+.coach-item-box {
+  width:700rpx;
+  height:calc(100vh - 252rpx);
+  box-sizing:border-box;
+  border:1rpx solid black;
+  margin:0 auto;
+}

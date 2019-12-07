@@ -15,7 +15,7 @@
     </view>
   </view>
 
-  <scroll-view>
-
+  <scroll-view class="coach-item-box">
+    <coach-card-item></coach-card-item>
   </scroll-view>
 </view>
