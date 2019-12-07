@@ -15,7 +15,7 @@
     </view>
   </view>
 
-  <scroll-view class="coach-item-box">
-    <coach-card-item></coach-card-item>
+  <scroll-view class="coach-item-box" scroll-y="true">
+    <coach-card-item wx:for="{{coachCardDatas}}" coachCardData="{{item}}" wx:key="{{index}}"></coach-card-item>
   </scroll-view>
 </view>

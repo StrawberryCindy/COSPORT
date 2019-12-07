@@ -3,14 +3,17 @@
   height:100vh;
   margin:0;
   padding:0;
+  background-color: rgb(149, 181, 192);
 }
 .callback-box {
   width:750rpx;
-  height:50rpx;
+  height:65rpx;
+  background-color:rgba(255,255,255,0.6);
 }
 .callback-image {
   width:70rpx;
   height:50rpx;
+  margin-top:15rpx;
   margin-left:20rpx;
 }
 .message-menu {
@@ -20,6 +23,7 @@
   display:flex;
   justify-content:space-around;
   -webkit-justify-content:space-around;
+  background-color:rgba(255,255,255,0.6);
 }
 .message-menu-left {
   width:250rpx;
@@ -59,8 +63,7 @@
 }
 .coach-item-box {
   width:700rpx;
-  height:calc(100vh - 252rpx);
+  height:calc(100vh - 267rpx);
   box-sizing:border-box;
-  border:1rpx solid black;
   margin:0 auto;
 }

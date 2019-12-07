@@ -1,14 +1,13 @@
-<view>
-  <view class="head-rotait-box">
-    <image  class="head-protait" src="{{ falseData.imgUrl }}"/>
+<view class="coach-card">
+  <view class="head-protait-box">
+    <image  class="head-protait" src="{{ coachCardData.imgUrl }}"/>
   </view>
-
   <view class="messagePart">
-    <view class="name">{{ falseData.name }}</view>
-    <view class="team">{{ falseData.team }}</view>
+    <view class="name">{{ coachCardData.name }}</view>
+    <view class="rank">国家{{ coachCardData.rank }}级运动员</view>
+    <view class="honer">{{ coachCardData.honer }}</view>
   </view>
-
-  <view class="button">
-    <button type="primary">查看</button>
+  <view class="button-box">
+    <view>查看</view>
   </view>
 </view>

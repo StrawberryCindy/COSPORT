@@ -1,12 +1,12 @@
 {
   "pages": [
+    "pages/coach/coachSearch/coachSearch",
     "pages/index/index",
     "pages/logs/logs",
     "pages/register/1/1",
     "pages/register/2/2",
     "pages/register/3/3",
     "pages/register/4/4",
-    "pages/coach/coachSearch/coachSearch",
     "pages/coach/coachOrder/coachOrder",
     "pages/coach/coachMessage/coachMessage"
   ],
