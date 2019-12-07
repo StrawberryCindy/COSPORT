@@ -5,7 +5,10 @@
     "pages/register/1/1",
     "pages/register/2/2",
     "pages/register/3/3",
-    "pages/register/4/4"
+    "pages/register/4/4",
+    "pages/coach/coachSearch/coachSearch",
+    "pages/coach/coachOrder/coachOrder",
+    "pages/coach/coachMessage/coachMessage"
   ],
   "window": {
     "backgroundTextStyle": "light",
@@ -18,9 +21,9 @@
     "color": "#337f9f",
     "selectedColor": "#f45599",
     "list": [
-      { 
+      {
         "text": "师傅&陪练",
-        "pagePath": "pages/index/index",
+        "pagePath": "pages/coach/coachSearch/coachSearch",
         "iconPath": "icons/person.png",
         "selectedIconPath": "icons/personActive.png"
       },
