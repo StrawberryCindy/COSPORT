@@ -1,0 +1,12 @@
+/* pages/order/myOrder/myOrder.wxss */
+.title {
+  width:750rpx;
+  height:100rpx;
+  line-height:100rpx;
+  text-align:center;
+}
+.order-box {
+  width:750rpx;
+  height:calc(100vh - 100rpx);
+  background-color: #deaaee;
+}

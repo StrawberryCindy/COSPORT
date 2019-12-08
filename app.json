@@ -1,14 +1,15 @@
 {
   "pages": [
+    "pages/order/myOrder/myOrder",
+    "pages/order/orderMessage/orderMessage",
     "pages/coach/coachSearch/coachSearch",
+    "pages/coach/coachMessage/coachMessage",
     "pages/index/index",
     "pages/logs/logs",
     "pages/register/1/1",
     "pages/register/2/2",
     "pages/register/3/3",
-    "pages/register/4/4",
-    "pages/coach/coachOrder/coachOrder",
-    "pages/coach/coachMessage/coachMessage"
+    "pages/register/4/4"
   ],
   "window": {
     "backgroundTextStyle": "light",
@@ -29,7 +30,7 @@
       },
       {
         "text": "我的预约",
-        "pagePath": "pages/index/index",
+        "pagePath": "pages/order/myOrder/myOrder",
         "iconPath": "icons/order.png",
         "selectedIconPath": "icons/orderActive.png"
       },
@@ -39,11 +40,11 @@
         "iconPath": "icons/message.png",
         "selectedIconPath": "icons/messageActive.png"
       },
-      { 
+      {
         "text": "设置",
         "pagePath": "pages/index/index",
         "iconPath": "icons/setting.png",
-        "selectedIconPath": "icons/settingActive.png" 
+        "selectedIconPath": "icons/settingActive.png"
       }
     ]
   }

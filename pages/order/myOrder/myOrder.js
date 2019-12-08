@@ -1,4 +1,4 @@
-// pages/coach/coachOrder/coachOrder.js
+// pages/order/myOrder/myOrder.js
 Page({
 
   /**
