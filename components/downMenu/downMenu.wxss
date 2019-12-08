@@ -14,19 +14,19 @@
   align-items:center;
 }
 .down-menu-select>view {
-  width:250rpx;
+  padding:15rpx 0;
   text-align:center;
 }
 .down-image {
   width:30rpx;
   height:30rpx;
-  padding-right:15rpx;
+  padding-right:25rpx;
   padding-left:5rpx;
 }
 .down-menu-item-box {
   width:inherit;
   position:absolute;
-  top:60rpx;
+  top:80rpx;
   z-index:1;
   background-color:#6891b3;
   border-radius: 0 0 10rpx 10rpx;
@@ -34,9 +34,8 @@
   padding: 10rpx 0;
 }
 .down-menu-item {
-  width:250rpx;
   height:60rpx;
   text-align:center;
-  padding-right:50rpx;
+  padding-right:60rpx;
   color:white;
 }

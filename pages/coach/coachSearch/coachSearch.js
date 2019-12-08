@@ -10,10 +10,13 @@ Page({
       school: "华工",
       schoolArea: "五山校区"
     },
-    downMenuData :[
+    downMenuData :{
+      width: "200rpx",
+      items: [
       "高水平运动员",
       "有基础陪练"
-    ],
+      ]
+    },
     downMenuVal: '',
     coachCardDatas: [
       {
