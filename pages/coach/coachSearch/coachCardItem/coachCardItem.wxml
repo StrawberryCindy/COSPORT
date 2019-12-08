@@ -8,6 +8,6 @@
     <view class="honer">{{ coachCardData.honer }}</view>
   </view>
   <view class="button-box">
-    <view bindtap="location">查看</view>
+    <view bindtap="detailMessage" data-id="{{coachCardData.id}}">查看</view>
   </view>
 </view>

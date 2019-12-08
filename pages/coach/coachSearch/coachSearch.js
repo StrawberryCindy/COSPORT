@@ -10,11 +10,17 @@ Page({
       school: "华工",
       schoolArea: "五山校区"
     },
-    downMenuData :[
+    downMenuData :{
+      width: "200rpx",
+      items: [
       "高水平运动员",
       "有基础陪练"
+      ]
+    },
+    downMenuVal: "高水平运动员",
+    showCardDatas: [
+
     ],
-    downMenuVal: '',
     coachCardDatas: [
       {
         imgUrl: "../../../../images/head.jpeg",
@@ -64,28 +70,37 @@ Page({
         rank: "一",
         honer: "在省级广东省运动会中获得冠军,我有很多荣誉我有很多荣誉我有很多荣誉我有很多荣誉我有很多荣誉我有很多荣誉我有很多荣誉我有很多荣誉我有很多荣誉我有很多荣誉我有很多荣誉我有很多荣誉我有很多荣誉我有很多荣誉我有很多荣誉我有很多荣誉我有很多荣誉我有很多荣誉"
       } 
-    ]
+    ],
+    parnterCardDatas: [
+      {
+        imgUrl: "../../../../images/head.jpeg",
+        name: "基础陪练",
+        rank: "一",
+        honer: "在省级广东省运动会中获得冠军,我有很多荣誉我有很多荣誉我有很多荣誉我有很多荣誉我有很多荣誉我有很多荣誉我有很多荣誉我有很多荣誉我有很多荣誉我有很多荣誉我有很多荣誉我有很多荣誉我有很多荣誉我有很多荣誉我有很多荣誉我有很多荣誉我有很多荣誉我有很多荣誉"
+      }
+    ],
   },
 
   /**
    * 生命周期函数--监听页面加载
    */
   onLoad: function (options) {
-
+    this.setData({
+      showCardDatas: this.data.coachCardDatas
+    })
   },
 
   /**
    * 生命周期函数--监听页面初次渲染完成
    */
   onReady: function () {
-
   },
 
   /**
    * 生命周期函数--监听页面显示
    */
   onShow: function () {
-
+    
   },
 
   /**
@@ -126,6 +141,15 @@ Page({
     this.setData({
       downMenuVal: e.detail.downMenuVal
     })
+    if (this.data.downMenuVal === "高水平运动员") {
+      this.setData({
+        showCardDatas: this.data.coachCardDatas
+      })
+    } else {
+      this.setData({
+        showCardDatas: this.data.parnterCardDatas
+      })
+    }
     console.log(this.data.downMenuVal);
   }
 })

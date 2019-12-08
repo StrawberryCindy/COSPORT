@@ -26,9 +26,9 @@ Component({
    * 组件的方法列表
    */
   methods: {
-    location () {
+    detailMessage () {
       wx.navigateTo({
-        url: '/pages/coach/coachMessage/coachMessage'
+        url: "/pages/coach/coachMessage/coachMessage"
       })
     }
   }
