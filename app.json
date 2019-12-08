@@ -1,5 +1,6 @@
 {
   "pages": [
+    "pages/coach/coachOrder/coachOrder",
     "pages/coach/coachSearch/coachSearch",
     "pages/index/index",
     "pages/logs/logs",
@@ -7,7 +8,6 @@
     "pages/register/2/2",
     "pages/register/3/3",
     "pages/register/4/4",
-    "pages/coach/coachOrder/coachOrder",
     "pages/coach/coachMessage/coachMessage"
   ],
   "window": {
@@ -29,7 +29,7 @@
       },
       {
         "text": "我的预约",
-        "pagePath": "pages/index/index",
+        "pagePath": "pages/coach/coachOrder/coachOrder",
         "iconPath": "icons/order.png",
         "selectedIconPath": "icons/orderActive.png"
       },

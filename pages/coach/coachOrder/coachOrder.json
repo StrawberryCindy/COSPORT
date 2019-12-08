@@ -1,3 +1,7 @@
 {
+  "window": {
+    "navigationBarTitleText": "COSPORT",
+    "navigationBarTextStyle": "我的师傅"
+  },
   "usingComponents": {}
 }
