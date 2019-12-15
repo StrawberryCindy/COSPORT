@@ -1,2 +1,72 @@
 <!--pages/coach/coachMessage/coachMessage.wxml-->
-<text>pages/coach/coachMessage/coachMessage.wxml</text>
+<view class="contain">
+  <view class="head-box">
+    <image class="callback-image" src="../../../images/callbackWhite.svg"/>
+    <view class="head-title">{{ falseData.sport }}</view>
+  </view>
+  <view class="message-box">
+    <view class="message">
+      <view class="name-equipment-box">
+        <view class="name">{{ falseData.name }}</view>
+        <view class="equipment">师傅的装备</view>
+      </view>
+      <view class="description-box">
+        <view class="rank">国家{{ falseData.rank }}级运动员</view>
+        <view class="description">{{ falseData.description }}</view>
+      </view>
+      <view class="comment-box">
+        <image class="comment-image" src="../../../images/comment.svg"></image>
+        <view class="comment">
+          <view class="comment-text" wx:for="{{ falseData.comments }}" wx:key="index">{{item}}</view>
+        </view>
+      </view>
+      <view class="comment-button">点击查看所有评论</view>
+    </view>
+    <view class="grid-box">
+      <view class="grid" style="border-left:none;">
+        <image class="grid-image" src="../../../images/money.svg"></image>
+        <view class="grid-text">
+          <text>￥{{ falseData.grid[0].price }} / 40min\n</text>
+          <text>￥{{ falseData.grid[0].doublePrice }} / 90min</text>
+        </view>
+      </view>
+      <view class="grid" style="border-right:none;">
+        <image class="grid-image" src="../../../images/person-group.svg"></image>
+        <view class="grid-text">
+          <view class="grid-num" style="margin-left: {{190 / 3 * (falseData.grid[1].personNumberMax - 1) + 'rpx'}}">
+            1v{{falseData.grid[1].personNumberMax}}
+            <view></view>
+          </view>
+          <view class="grid-line">
+            <view></view>
+            <view></view>
+            <view></view>
+            <view></view>
+          </view>
+          <view class="grid-num-reverse" style="margin-left: {{190 / 3 * (falseData.grid[1].personNumberMin - 1) + 'rpx'}}">
+            <view></view>
+            <text>1v{{falseData.grid[1].personNumberMin}}</text>
+          </view>
+        </view>
+      </view>
+      <view class="grid" style="border-left:none;">
+        <image class="grid-image" src="../../../images/positionWhite.svg"></image>
+        <view class="grid-text">
+          <text>{{falseData.grid[2].text}}</text>
+        </view>
+      </view>
+      <view class="grid" style="border-right:none;">
+        <image class="grid-image" src="../../../images/content.svg"></image>
+        <view class="grid-text">
+          <text>{{falseData.grid[3].text}}</text>
+        </view>
+      </view>
+    </view>
+    <scroll-view class="image-group" scroll-x="true">
+      <image src="{{item}}" data-src="{{item}}" mode="aspectFit" wx:for="{{falseData.imageUrl}}" wx:key="index" bindtap="previewImage"></image>
+    </scroll-view>
+    <view class="button">
+      拜他为师
+    </view>
+  </view>
+</view>

@@ -8,5 +8,5 @@
 .order-box {
   width:750rpx;
   height:calc(100vh - 100rpx);
-  background-color: #deaaee;
+  background-color: #aecef3;
 }

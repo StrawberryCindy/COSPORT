@@ -1,0 +1,49 @@
+<!--pages/order/myOrder/myOrderItem/myOrderItem.wxml-->
+<view class="my-order-item">
+  <view class="date-position-box">
+    <view class="date-position date">
+      <view class="icon-box">
+        <image src="../../../../images/time.svg"></image>
+      </view>
+      <view class="date-position-text">
+        {{ myOrderItemData.date }}
+      </view>
+    </view>
+    <view class="date-position position">
+      <view class="icon-box">
+        <image src="../../../../images/position.svg"></image>
+      </view>
+      <view class="date-position-text">
+        {{ myOrderItemData.position }}
+      </view>
+    </view>
+  </view>
+  <view class="student-name-box">
+    <view class="icon-box">
+      <image src="../../../../images/person.svg"></image>
+    </view>
+    <view class="student-name-text">
+      {{ myOrderItemData.studentName }}
+    </view>
+  </view>
+  <view class="operation">
+    <view class="hint-text">{{ hintText }}</view>
+    <view class="image">
+      <image src="../../../../images/evaluation.svg"></image>
+    </view>
+    <view class="button-box" wx:if="{{isShowButton}}">
+      <view class="button">
+        {{buttonText}}
+      </view>
+    </view>
+    <view class="button-box" wx:if="{{isShowAccept}}">
+      <view class="select" bindtap="accept">
+        <image src="../../../../images/right.svg"></image>
+      </view>
+      <view class="select" bindtap="refuse">
+        <image src="../../../../images/incorrect.svg"></image>
+      </view>
+    </view>
+    <view class="button-box" wx:if="{{ (!isShowAccept) && (!isShowButton) }}"></view>
+  </view>
+</view>

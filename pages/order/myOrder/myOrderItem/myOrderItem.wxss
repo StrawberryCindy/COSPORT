@@ -1,0 +1,115 @@
+/* pages/order/myOrder/myOrderItem/myOrderItem.wxss */
+.my-order-item {
+  width:720rpx;
+  height:200rpx;
+  margin:0 auto;
+  background-color: rgba(255, 255, 255, 0.4);
+  display:flex;
+  justify-content: space-around;
+  align-items: center;
+  padding:20rpx 0;
+  margin-top:20rpx;
+  border-radius:20rpx;
+}
+.date-position-box {
+  width:300rpx;
+  height:200rpx;
+  font-size:30rpx;
+  display:flex;
+  flex-direction: column;
+  justify-content: space-around;
+}
+.date-position {
+  display:flex;
+  justify-content: space-around;
+  align-items:center;
+}
+.date>.date-position-text {
+  width:250rpx;
+  height:50rpx;
+  margin-left:20rpx;
+}
+.position>.date-position-text {
+  width:250rpx;
+  height:80rpx;
+  margin-left:20rpx;
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: 2;
+  overflow: hidden;
+}
+.icon-box {
+  width:30rpx;
+  height:30rpx;
+}
+.icon-box image {
+  width:30rpx;
+  height:30rpx;
+  display:block;
+}
+.student-name-box {
+  width:150rpx;
+  height:50rpx;
+  display:flex;
+  justify-content: space-around;
+  align-items:center;
+}
+.student-name-text {
+  width:100rpx;
+  height:50rpx;
+  text-align:center;
+  font-size:30rpx;
+  line-height:50rpx;
+  overflow: hidden;
+  text-overflow:ellipsis;
+  white-space: nowrap;
+}
+.operation {
+  width:150rpx;
+  height:200rpx;
+  display:flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items:flex-end;
+  font-size:30rpx;
+}
+.hint-text {
+  width:150rpx;
+  height:60rpx;
+  line-height:60rpx;
+  text-align:right;
+}
+.image {
+  width:150rpx;
+  height:50rpx;
+}
+.image image {
+  width:50rpx;
+  height:inherit;
+  float:right;
+}
+.button-box {
+  width:100rpx;
+  height:60rpx;
+  line-height:60rpx;
+}
+.button {
+  width:100rpx;
+  height:40rpx;
+  margin-top:10rpx;
+  font-size:20rpx;
+  line-height:40rpx;
+  text-align:center;
+  background-color:rgba(255,255,255,0);
+  color:#bb84cc;
+  border:1rpx solid #b678c5;
+  border-radius:10rpx;
+}
+.select {
+  width:40rpx;
+  height:40rpx;
+}
+.select image {
+  width:inherit;
+  height:inherit;
+}

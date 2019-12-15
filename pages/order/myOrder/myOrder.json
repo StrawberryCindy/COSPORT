@@ -1,4 +1,6 @@
 {
   "navigationBarTitleText": "",
-  "usingComponents": {}
+  "usingComponents": {
+    "my-order-item": "myOrderItem/myOrderItem"
+  }
 }

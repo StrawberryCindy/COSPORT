@@ -1,1 +1,248 @@
 /* pages/coach/coachMessage/coachMessage.wxss */
+.contain {
+  width:750rpx;
+  height:100vh;
+  margin:0;
+  padding:0;
+  background-color: rgb(186, 146, 219);
+  overflow:scroll;
+}
+.head-box {
+  width:750rpx;
+  height:65rpx;
+  background-color:rgba(255,255,255,0);
+  display:flex;
+  justify-content:space-around;
+}
+.callback-image {
+  width:50rpx;
+  height:50rpx;
+  margin-top:7.5rpx;
+}
+.head-title {
+  width:600rpx;
+  height:65rpx;
+  text-align:left;
+  line-height:65rpx;
+  font-size:30rpx;
+  color:rgb(255, 255, 255);
+}
+.message-box {
+  width:750rpx;
+  height:calc(100vh - 65rpx);
+}
+.message {
+  width:750rpx;
+  display:flex;
+  flex-direction: column;
+  justify-content: space-around;
+}
+.name-equipment-box {
+  width:750rpx;
+  height:100rpx;
+  display:flex;
+  justify-content: space-around;
+  align-items:center;
+}
+.name {
+  width:300rpx;
+  height:100rpx;
+  line-height:100rpx;
+  text-align:center;
+  font-size:70rpx;
+  color:white;
+}
+.equipment {
+  width:200rpx;
+  height:80rpx;
+  line-height:80rpx;
+  font-size:30rpx;
+  text-align:center;
+  border:1rpx solid #d6a2e0;
+  border-radius:20rpx;
+  background-color: rgb(225, 204, 230);
+  color:#d6a2e0;
+}
+.description-box {
+  width:750rpx;
+  height:220rpx;
+  display:flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items:center;
+  color:white;
+}
+.rank {
+  width:650rpx;
+  height:50rpx;
+  line-height:50rpx;
+  margin:0 50rpx 0 50rpx;
+  border-top:2rpx solid #c060d3;
+}
+.description {
+  width:650rpx;
+  height:150rpx;
+  margin:0 50rpx 0 50rpx;
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: 3;
+  overflow: hidden;
+}
+.comment-box {
+  width:650rpx;
+  height:130rpx;
+  margin:0 auto;
+  display:flex;
+  justify-content: space-around;
+  color:white;
+}
+.comment-image {
+  width:40rpx;
+  height:40rpx;
+  margin-top:20rpx;
+}
+.comment {
+  width:650rpx;
+  height:100rpx;
+  overflow:hidden;
+}
+.comment-text {
+  width:600rpx;
+  height:100rpx;
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: 2;
+  overflow: hidden;
+}
+.comment-button {
+  width:650rpx;
+  height:50rpx;
+  line-height:50rpx;
+  font-size:30rpx;
+  text-align:right;
+  display:block;
+  float:right;
+  margin:0 auto;
+  margin-right:30rpx;
+  text-decoration: underline;
+  color:white;
+}
+.grid-box {
+  width:750rpx;
+  height:400rpx;
+  display:flex;
+  justify-content: center;
+  align-items:center;
+  flex-wrap:wrap;
+  color:white;
+}
+.grid {
+  width:350rpx;
+  height:198rpx;
+  border:1rpx solid white;
+  display:flex;
+  justify-content: space-around;
+  align-items:center;
+  color:white;
+}
+.grid-image {
+  width:50rpx;
+  height:50rpx;
+  align-self:flex-start;
+  margin-top:35rpx;
+}
+.grid-text {
+  width:250rpx;
+  height:158rpx;
+  line-height:40rpx;
+  font-size:30rpx;
+  display:flex;
+  flex-direction:column;
+  justify-content:center;
+}
+.grid-num {
+  width:80rpx;
+  height:40rpx;
+  border-radius:100%;
+  background-color: rgb(233, 175, 223);
+  text-align:center;
+  font-size:30rpx;
+  line-height:40rpx;
+  margin-bottom:30rpx;
+}
+.grid-num view {
+  width: 0; 
+  height: 0;
+  border-width:30rpx;
+  border-style: solid;
+  border-color:rgb(233, 175, 223) transparent transparent transparent;
+  border-radius:0 0 20rpx 20rpx;
+  margin:0 auto;
+  position:relative;
+  top:-5rpx;
+}
+.grid-line {
+  width:200rpx;
+  height:1rpx;
+  background-color: rgb(255, 255, 255);
+  display:flex;
+  justify-content:space-between;
+  align-items:center;
+  margin-left:34rpx;
+}
+.grid-line view {
+  width:5rpx;
+  height:5rpx;
+  background-color: rgb(255, 255, 255);
+  border:5rpx solid rgba(255, 255, 255, 0.2);
+  border-radius:50%;
+}
+.grid-num-reverse {
+  width:80rpx;
+  height:40rpx;
+  border-radius:100%;
+  background-color: rgb(233, 175, 223);
+  text-align:center;
+  font-size:30rpx;
+  line-height:40rpx;
+  margin-top:30rpx;
+}
+.grid-num-reverse view {
+  width: 0; 
+  height: 0;
+  border-width: 30rpx;
+  border-style: solid;
+  border-color: transparent transparent rgb(233, 175, 223) transparent;
+  position:relative;
+  top:-45rpx;
+  margin:0 auto;
+}
+.grid-num-reverse text {
+  position:relative;
+  top:-55rpx;
+}
+.image-group {
+  width:750rpx;
+  height:300rpx;
+  display:flex;
+  justify-content: space-around;
+  align-items:center;
+  white-space: nowrap;
+}
+.image-group image {
+  width:100rpx;
+  max-height:300rpx;
+  margin:0 50rpx 0 50rpx;
+}
+.button {
+  width:500rpx;
+  height:120rpx;
+  line-height:120rpx;
+  font-size:48rpx;
+  text-align:center;
+  border:1rpx solid #d6a2e0;
+  background-color: rgb(173, 190, 236);
+  color:#ffffff;
+  margin:0 auto;
+  margin-bottom:100rpx;
+}
