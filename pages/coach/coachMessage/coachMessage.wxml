@@ -1,7 +1,7 @@
 <!--pages/coach/coachMessage/coachMessage.wxml-->
 <view class="contain">
   <view class="head-box">
-    <image class="callback-image" src="../../../images/callbackWhite.svg"/>
+    <image class="callback-image" src="../../../images/callbackWhite.svg" bindtap="locationCallback"/>
     <view class="head-title">{{ falseData.sport }}</view>
   </view>
   <view class="message-box">
@@ -65,7 +65,7 @@
     <scroll-view class="image-group" scroll-x="true">
       <image src="{{item}}" data-src="{{item}}" mode="aspectFit" wx:for="{{falseData.imageUrl}}" wx:key="index" bindtap="previewImage"></image>
     </scroll-view>
-    <view class="button">
+    <view class="button" bindtap="loactionOrderMessage">
       拜他为师
     </view>
   </view>

@@ -104,5 +104,16 @@ Page({
       current: src,
       urls: this.data.falseData.imageUrl // 需要预览的图片http链接列表  
     })
+  },
+  loactionOrderMessage () {
+    wx.navigateTo({
+      url: "/pages/order/orderMessage/orderMessage"
+    })
+  },
+  locationCallback () {
+    wx.switchTab({
+      url: "/pages/coach/coachSearch/coachSearch"
+    })
   }
+
 })
