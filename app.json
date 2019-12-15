@@ -1,7 +1,7 @@
 {
   "pages": [
-    "pages/coach/coachMessage/coachMessage",
     "pages/order/myOrder/myOrder",
+    "pages/coach/coachMessage/coachMessage",
     "pages/order/orderMessage/orderMessage",
     "pages/coach/coachSearch/coachSearch",
     "pages/index/index",
